@@ -18,6 +18,7 @@ if not EVENT then
     local mt = getrawmetatable(game)
     local old = mt.__namecall
     setreadonly(mt, false)
+
     mt.__namecall = function(self, ...)
         local method = getnamecallmethod()
         
@@ -33,12 +34,14 @@ if not EVENT then
 
         return old(self, ...)
     end
+    
     setreadonly(mt, true)
 
     repeat wait() until EVENT
+
+    getgenv().SAVED_EVENT = EVENT
 end
 
-getgenv().SAVED_EVENT = EVENT
 getgenv().autofarm = true -- set to false to manually stop
 
 while getgenv().autofarm and wait(1) do
@@ -57,6 +60,7 @@ while getgenv().autofarm and wait(1) do
             }
         )
     end
+
     VirtualUser:CaptureController()
     VirtualUser:ClickButton2(Vector2.new())
 end
