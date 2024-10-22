@@ -1,6 +1,8 @@
 # Bloxburg-Autofarm
 Bloxburg auto farm script. Earn $1,000,000 in-game in just a night while asleep.
 
+Too rich? Send all your Bitcoins here (Donation): 17nXfqRRiSGDpx1XEh3veHA6gyCLAktFk9
+
 https://discord.com/invite/Bnf3e8pkyj
 
 follow me for more free roblox cheats :3
